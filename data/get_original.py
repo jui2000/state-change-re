@@ -5,12 +5,12 @@ from os import listdir
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 
-output_path = sys.argv[1]
+input_path = sys.argv[1]#"/mnt/nfs/scratch1/dongxuzhang/dataset/LDC2011T07/"
+output_path = sys.argv[2]
 
 spacy.require_gpu()
 nlp = spacy.load('en_core_web_trf')
 
-input_path = "/mnt/nfs/scratch1/dongxuzhang/dataset/LDC2011T07/"
 dirs = ["gigaword_eng_5_d1", "gigaword_eng_5_d2", "gigaword_eng_5_d3"]
 newspapers = {"afp":0, "apw":0, "cna":1, "ltw":1, "nyt":1, "wpb":1, "xin":2}
 
