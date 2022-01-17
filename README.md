@@ -11,7 +11,7 @@ You can run the get_original.py file to get the actual sentences, tokens and sub
 
 You can run:
 
-python get_original.py inout_path output_path
+python ./data/get_original.py inout_path output_path
 
 
 In data, there are 5 folders :
