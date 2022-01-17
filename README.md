@@ -5,7 +5,9 @@
 
 ## Data
 
-We use the LDC2011T07 dataset and pre-process it, even add manual annotations for our usecase. You can run the get_original.py file to get the actual sentences, tokens and subject-object names in sentences by giving the dataset directory as input path. 
+We use the LDC2011T07 dataset and pre-process it, even add manual annotations for our usecase. We provide indexes of the data we have used so that the actual data can be retrived.
+
+You can run the get_original.py file to get the actual sentences, tokens and subject-object names in sentences by giving the dataset directory as input path. 
 
 You can run:
 
