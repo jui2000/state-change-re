@@ -14,14 +14,14 @@ nlp = spacy.load('en_core_web_trf')
 dirs = ["gigaword_eng_5_d1", "gigaword_eng_5_d2", "gigaword_eng_5_d3"]
 newspapers = {"afp":0, "apw":0, "cna":1, "ltw":1, "nyt":1, "wpb":1, "xin":2}
 
-output_folder = "/mnt/nfs/scratch1/jbshah/final_data/"
+output_folder = "/mnt/nfs/scratch1/jbshah/final_data/train_"
 datasets = ["-11_10_","-31_30_","-101_100_", "-301_300_"]
 relations = ["0","1","3","4","5","6","7"]
 
 print("START")
 for data in datasets: #This part is reading the final output lines
     for relation in relations:
-        masked_file = open(output_folder + data + relation + "_train.txt","r")
+        masked_file = open(output_folder + data + relation + ".txt","r")
         for masked_line in masked_file:
             masked_mod_line = ast.literal_eval(masked_line)
             masked_docid = masked_mod_line['doc_id']
