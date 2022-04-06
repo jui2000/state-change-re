@@ -21,4 +21,4 @@ In `./data`, there are 5 folders :
 5) `dynamic_test` contains all the dynamic test data for each relation type.
 
 ## License
-The code is released under the under terms of the MIT License.
+The code is released under the under terms of the Apache-2.0 License.
