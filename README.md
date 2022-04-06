@@ -1,4 +1,4 @@
-# state-change-re
+# State-change Relation Extraction Dataset (StaRE)
 
 This is the state-change relation extraction dataset of paper "Enhanced Distant Supervision with State-Change Information for Relation Extraction" in LREC 2022.
 
