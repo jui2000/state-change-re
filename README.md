@@ -20,5 +20,22 @@ In `./data`, there are 5 folders :
 4) `dynamic_val` contains all the dynamic validation data for each relation type.
 5) `dynamic_test` contains all the dynamic test data for each relation type.
 
+
+## _Relationtype_ in dynamic:
+
+1) 0.txt represents P26@start
+2) 1.txt represents P26@end
+3) 3.txt represents P35@start
+4) 7.txt represents P54@start
+5) 5.txt represents P463@start
+
+## _Relationtype_ in static:
+
+1) Merging 0.txt and 1.txt represents P26 
+2) 3.txt represents P35
+3) 7.txt represents P54
+4) 5.txt represents P463
+
+
 ## License
 The code is released under the under terms of the Apache-2.0 License.
