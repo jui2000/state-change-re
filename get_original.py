@@ -14,8 +14,8 @@ gigaword_path = sys.argv[1]
 output_dir = sys.argv[2]
 
 
-spacy.prefer_gpu()
-#spacy.require_gpu()
+#spacy.prefer_gpu()
+spacy.require_gpu()
 nlp = spacy.load('en_core_web_trf')#, disable=["tagger","attribute_ruler","lemmatizer","ner"])
 
 gigawords_dirs = ["gigaword_eng_5_d1",
@@ -25,7 +25,7 @@ source2dir = {"afp": 0, "apw": 0, "cna": 1,
 
 train_dirs = ["data/train/train_-11_10", "data/train/train_-31_30",
               "data/train/train_-101_100", "data/train/train_-301_300"]
-relations = ["0", "1", "3", "4", "5", "6", "7"]
+relations = ["0", "1", "3", "5", "7"]
 train_files = [f"{d}_{r}.txt" for d in train_dirs for r in relations] + [
    "data/train/train_negatives.txt"]
 
